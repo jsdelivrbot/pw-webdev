@@ -82,9 +82,10 @@
 }
 
 .heading h1 {
-    font-size:40px;
+    font-size:60px;
     font-weight:900;
     text-align:center;
+    color:#7a7570;
 }
 
 .sidebyside {
@@ -127,7 +128,10 @@
     min-width:100%;
     padding-top:5%;
     padding-bottom:5%;
-    background:url(img/projects.jpg);
+    background:url(img/projects1.jpg);
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    z-index:1;
     overflow:hidden;
 }
 
@@ -145,10 +149,12 @@
 .project {
     width:30%;
     background:#e8e8e8;
-    margin-right:20px;
-    margin-left:20px;
-    margin-top:20px;
-    margin-bottom:20px;
+    box-shadow: 5px 5px 10px 10px #e8e8e8;
+    opacity:0.7;
+    margin-right:25px;
+    margin-left:25px;
+    margin-top:25px;
+    margin-bottom:25px;
     text-align:center;
     text-decoration:none;
 }
@@ -346,7 +352,7 @@
     }
 
     .list a:hover {
-        background:orange;
+        color:orange;
         text-decoration:none;
     }
 
@@ -388,7 +394,7 @@
     }
 
     .list a:hover {
-        background:orange;
+        color:orange;
         text-decoration:none;
     }
 
@@ -430,7 +436,7 @@
     }
 
     .list a:hover {
-        background:orange;
+        color:orange;
         text-decoration:none;
     }
 
@@ -472,7 +478,7 @@
     }
 
     .list a:hover {
-        background:orange;
+        color:orange;
         text-decoration:none;
     }
 
@@ -525,7 +531,7 @@
 
 @media screen and (max-width:1100px) {
     .heading h1 {
-        font-size:35px;
+        font-size:50px;
         font-weight:900;
         text-align:center;
     }
@@ -565,13 +571,7 @@
     }    
 }
 
-@media screen and (max-width:800px) {
-    .heading h1 {
-        font-size:30px;
-        font-weight:900;
-        text-align:center;
-    }
-    
+@media screen and (max-width:800px) {   
     .sidebyside {
         width:100%;
         max-width:100%;
@@ -613,9 +613,17 @@
     }    
 }
 
-@media screen and (max-width:280px) {
+@media screen and (max-width:500px) {   
     .heading h1 {
-        font-size:25px;
+        font-size:40px;
+        font-weight:900;
+        text-align:center;
+    }
+}
+
+@media screen and (max-width:310px) {
+    .heading h1 {
+        font-size:30px;
         font-weight:900;
         text-align:center;
     }
@@ -675,7 +683,9 @@
         min-width:100%;
         padding-top:5%;
         padding-bottom:5%;
-        background:#cccccc;
+        background:url(img/projects.jpg);
+        background-size:100% 100%;
+        background-repeat:no-repeat;
         overflow:hidden;
     }
 
@@ -693,10 +703,11 @@
     .project {
         width:40%;
         background:#e8e8e8;
-        margin-right:20px;
-        margin-left:20px;
-        margin-top:10px;
-        margin-bottom:10px;
+        opacity:0.7;
+        margin-right:25px;
+        margin-left:25px;
+        margin-top:25px;
+        margin-bottom:25px;
         text-align:center;
         text-decoration:none;
     }
@@ -720,7 +731,9 @@
         min-width:100%;
         padding-top:5%;
         padding-bottom:5%;
-        background:#cccccc;
+        background:url(img/projects.jpg);
+        background-size:100% 100%;
+        background-repeat:no-repeat;
         overflow:hidden;
     }
 
@@ -740,8 +753,8 @@
         background:#e8e8e8;
         margin-right:20px;
         margin-left:20px;
-        margin-top:10px;
-        margin-bottom:10px;
+        margin-top:20px;
+        margin-bottom:20px;
         text-align:center;
         text-decoration:none;
     }
@@ -758,40 +771,40 @@
     }    
 }
 
-
-
 @media screen and (max-width:1300px) {
     .experiencesOrg {
         width:100%;
         max-width:100%;
         min-width:100%;
         display:flex;
-        flex-wrap:wrap;
-        padding-right:10%;
-        padding-left:10%;
+        justify-content:space-around;
+        padding-right:2%;
+        padding-left:2%;
     }
 
     .experience {
-        width:300px;
-        height:250px;
+        width:250px;
+        height:208.33px;
         background:white;
-        margin-right:20px;
-        margin-left:20px;
-        margin-top:20px;
-        margin-bottom:20px;
+        margin-right:15px;
+        margin-left:15px;
+        margin-top:15px;
+        margin-bottom:15px;
         text-align:center;
         text-decoration:none;
     }
 
-    .p1E {
-        font-size:19.5px;
+     .p1E {
+        font-size:12px;
         font-weight:800;
         padding-top:1.5%;
+        padding-right:3%;
+        padding-left:3%;
         color:black;
     }
 
     .p2E {
-        font-size:13px;
+        font-size:12px;
         font-weight:500;
         padding-right:3%;
         padding-left:3%;
@@ -801,7 +814,53 @@
     }
 }
 
-@media screen and (max-width:500px) {
+
+
+@media screen and (max-width:900px) {
+    .experiencesOrg {
+        width:100%;
+        max-width:100%;
+        min-width:100%;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-around;
+        padding-right:10%;
+        padding-left:10%;
+    }
+
+    .experience {
+        width:300px;
+        height:250px;
+        background:white;
+        margin-right:50px;
+        margin-left:50px;
+        margin-top:25px;
+        margin-bottom:25px;
+        text-align:center;
+        text-decoration:none;
+    }
+
+    .p1E {
+        font-size:19.5px;
+        font-weight:800;
+        padding-top:1.5%;
+        padding-right:0.25%;
+        padding-left:0.25%;
+        color:black;
+    }
+
+    .p2E {
+        font-size:13px;
+        font-weight:500;
+        padding-bottom:1%;
+        padding-right:0.25%;
+        padding-left:0.25%;
+        color:black;
+        font-weight:bold;
+    }
+}
+
+@media screen and (max-width:500px) { //good
     .experiencesOrg {
         width:100%;
         max-width:100%;
@@ -842,7 +901,7 @@
         padding-left:0.25%;
         color:black;
         font-weight:bold;
-    }
+    }    
 }
 
 @media screen and (max-width:340px) {
@@ -858,19 +917,19 @@
     }
 
     .experience {
-        width:150px;
-        height:125px;
+        width:200;
+        height:166.67px;
         background:white;
-        margin-right:20px;
-        margin-left:20px;
-        margin-top:20px;
-        margin-bottom:20px;
+        margin-right:1px;
+        margin-left:1px;
+        margin-top:10px;
+        margin-bottom:10px;
         text-align:center;
         text-decoration:none;
     }
 
     .p1E {
-        font-size:7.5px;
+        font-size:10px;
         font-weight:800;
         padding-top:1.5%;
         padding-right:0.25%;
@@ -879,7 +938,7 @@
     }
 
     .p2E {
-        font-size:7px;
+        font-size:9.5px;
         font-weight:500;
         padding-bottom:1%;
         padding-right:0.25%;
