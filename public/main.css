@@ -102,7 +102,7 @@
     float:left;
     padding-left:20%;
     padding-bottom:1%;
-    padding-top:1%; //remove
+    padding-top:1%;
     overflow:hidden;
 }
 
@@ -508,6 +508,7 @@
         float:left;
         padding-left:10%;
         padding-right:1%;
+        padding-top:1%;
         overflow:hidden;
         vertical-align:middle;
     }
@@ -551,6 +552,7 @@
         float:left;
         padding-left:5%;
         padding-right:3%;
+        padding-top:1%;
         overflow:hidden;
     }
 
