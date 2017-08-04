@@ -102,6 +102,7 @@
     float:left;
     padding-left:20%;
     padding-bottom:1%;
+    padding-top:1%; //remove
     overflow:hidden;
 }
 
