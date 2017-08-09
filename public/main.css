@@ -15,7 +15,7 @@
 }
 
 .list ul {
-    display: inline-block;
+    display:inline-block;
 }
 
 .list li {
@@ -26,15 +26,15 @@
 }
 
 .list li:last-child {
-    margin-right:0px;
+    margin-right:20px;
 }
 
-.list a {
+.pull-right a {
     color:white;
     text-decoration:none;
 }
 
-.list a:hover {
+.list a:hover, a:active, a:focus {
     color:orange;
     text-decoration:none;
 }
@@ -102,7 +102,6 @@
     float:left;
     padding-left:20%;
     padding-bottom:1%;
-    padding-top:0.5%;
     overflow:hidden;
 }
 
@@ -125,13 +124,13 @@
 
 .projectsItem {
     width:100%;
+    background:url(img/projects.jpg);
+    background-size:100% 100%;
+    background-repeat:no-repeat;
     max-width:100%;
     min-width:100%;
     padding-top:5%;
     padding-bottom:5%;
-    background:url(img/projects.jpg);
-    background-size:100% 100%;
-    background-repeat:no-repeat;
     z-index:1;
     overflow:hidden;
 }
@@ -173,6 +172,7 @@
     font-size:19.5px;
     font-weight:800;
     padding-top:1.5%;
+    color:orange;
 }
 
 .p2P {
@@ -185,11 +185,15 @@
 
 .experiencesItem {
     width:100%;
+    background:url(img/experience.png);
+    background-color: rgba(33, 33, 33, 0.5);
+    opacity:0.7;
+    background-size:100% 100%;
+    background-repeat:no-repeat;
     max-width:100%;
     min-width:100%;
     padding-top:5%;
     padding-bottom:5%;
-    background:#e8e8e8;
     overflow:hidden;
 }
 
@@ -198,60 +202,88 @@
     max-width:100%;
     min-width:100%;
     display:flex;
+    flex-wrap:wrap;
     justify-content:space-around;
-    padding-right:10%;
-    padding-left:10%;
+    padding-right:3%;
+    padding-left:3%;
 }
 
 .experience {
-    width:300px;
-    height:250px;
-    background:white;
+    width:100%;
     margin-right:20px;
     margin-left:20px;
     margin-top:20px;
     margin-bottom:20px;
-    text-align:center;
     text-decoration:none;
 }
 
-#experience1 {
-    background:url(img/p&cInsurance.PNG);
-    background-size:100% 100%;
-    background-repeat:no-repeat;
-    opacity:0.7;
-}
-
-#experience2 {
+#e1a {
+    width:350px;
+    height:275px;
+    float:left;
     background:url(img/informaticsSkunkworks.PNG);
     background-size:100% 100%;
-    background-repeat:no-repeat;
-    opacity:0.7;
+    border-radius:10px;
+    margin-top:30px;
+    margin-left:150px;
 }
 
-#experience3 {
+#e1b {
+    width:50%;
+    float:right;
+    margin-right:150px;
+}
+
+#e2a {
+    width:350px;
+    height:275px;
+    float:right;
     background:url(img/transcend.PNG);
     background-size:100% 100%;
-    background-repeat:no-repeat;
-    opacity:0.7;
+    border-radius:10px;
+    margin-top:30px;
+    margin-right:150px;
+}
+
+#e2b {
+    width:50%;
+    float:left;
+    margin-left:150px;
+}
+
+#e3a {
+    width:350px;
+    height:275px;
+    float:left;
+    background:url(img/erieInsurance.PNG);
+    background-size:100% 100%;
+    border-radius:10px;
+    margin-top:30px;
+    margin-left:150px;
+}
+
+#e3b {
+    width:50%;
+    float:right;
+    margin-right:150px;
 }
 
 .p1E {
-    font-size:19.5px;
+    font-size:35px;
     font-weight:800;
     padding-top:1.5%;
     padding-right:3%;
     padding-left:3%;
-    color:black;
+    color:orange;
 }
 
 .p2E {
-    font-size:13px;
+    font-size:25px;
     font-weight:500;
     padding-right:3%;
     padding-left:3%;
     padding-bottom:1%;
-    color:black;
+    color:white;
     font-weight:bold;
 }
 
@@ -261,7 +293,7 @@
     min-width:100%;
     padding-top:5%;
     padding-bottom:5%;
-    background:#cccccc;
+    background:#e8e8e8;
     overflow:hidden;
     text-align:center;
 }
@@ -316,6 +348,7 @@
 .footerContent {
     padding-top:3%;
     font-size:22px;
+    color:orange;
 }
 
 @media screen and (max-width:1150px) {
@@ -508,7 +541,6 @@
         float:left;
         padding-left:10%;
         padding-right:1%;
-        padding-top:0.5%;
         overflow:hidden;
         vertical-align:middle;
     }
@@ -525,7 +557,7 @@
         float:right;
         padding-right:10%;
         padding-left:1%;
-        font-size:21px;
+        font-size:20px;
         font-weight:700;
         overflow:hidden;
     }
@@ -552,7 +584,6 @@
         float:left;
         padding-left:5%;
         padding-right:3%;
-        padding-top:2%;
         overflow:hidden;
     }
 
@@ -568,10 +599,27 @@
         float:right;
         padding-right:5%;
         padding-left:3%;
-        font-size:21px;
+        font-size:18px;
         font-weight:700;
         overflow:hidden;
-    }    
+    }
+    
+    .p1C {
+        font-size:23px;
+        font-weight:600;
+        padding-bottom:2%;
+    }
+
+    .p2C {
+        font-size:23px;
+        font-weight:600;
+    }
+
+    .p3C {
+        font-size:23px;
+        font-weight:600;
+        color:orange;
+    }
 }
 
 @media screen and (max-width:800px) {   
@@ -609,7 +657,7 @@
         display:block;
         padding-right:3%;
         padding-left:3%;
-        font-size:21px;
+        font-size:19px;
         font-weight:700;
         overflow:hidden;
         text-align:center;
@@ -621,6 +669,23 @@
         font-size:40px;
         font-weight:900;
         text-align:center;
+    }
+    
+    .p1C {
+        font-size:20px;
+        font-weight:600;
+        padding-bottom:2%;
+    }
+
+    .p2C {
+        font-size:20px;
+        font-weight:600;
+    }
+
+    .p3C {
+        font-size:20px;
+        font-weight:600;
+        color:orange;
     }
 }
 
@@ -666,14 +731,25 @@
         display:block;
         padding-right:2%;
         padding-left:2%;
-        font-size:21px;
+        font-size:16px;
         font-weight:700;
         overflow:hidden;
         text-align:center;
     }    
     
+    .p1C {
+        font-size:18px;
+        font-weight:600;
+        padding-bottom:2%;
+    }
+
+    .p2C {
+        font-size:18px;
+        font-weight:600;
+    }
+
     .p3C {
-        font-size:22px;
+        font-size:18px;
         font-weight:600;
         color:orange;
     }
@@ -716,12 +792,13 @@
     }
 
     .p1P {
-        font-size:25px;
+        font-size:20px;
         font-weight:600;
+        color:orange;
     }
 
     .p2P {
-        font-size:20px;
+        font-size:18px;
         font-weight:500;
         color:black;
     }    
@@ -763,107 +840,139 @@
     }
 
     .p1P {
-        font-size:25px;
+        font-size:18px;
         font-weight:600;
+        color:orange;
     }
 
     .p2P {
-        font-size:20px;
+        font-size:15px;
         font-weight:500;
         color:black;
     }    
 }
 
-@media screen and (max-width:1300px) {
+@media screen and (max-width:1600px) {
+   .experiencesItem {
+        width:100%;
+        background:url(img/experience.png);
+        background-color: rgba(33, 33, 33, 0.5);
+        opacity:0.9;
+        background-size:100% 100%;
+        background-repeat:no-repeat;
+        max-width:100%;
+        min-width:100%;
+        padding-top:5%;
+        padding-bottom:5%;
+        overflow:hidden;
+    }
+
     .experiencesOrg {
         width:100%;
         max-width:100%;
         min-width:100%;
         display:flex;
+        flex-wrap:wrap;
         justify-content:space-around;
-        padding-right:2%;
-        padding-left:2%;
+        padding-right:1%;
+        padding-left:1%;
     }
 
     .experience {
-        width:250px;
-        height:208.33px;
-        background:white;
+        width:100%;
         margin-right:15px;
         margin-left:15px;
         margin-top:15px;
         margin-bottom:15px;
-        text-align:center;
         text-decoration:none;
     }
 
-     .p1E {
-        font-size:12px;
-        font-weight:800;
-        padding-top:1.5%;
-        padding-right:3%;
-        padding-left:3%;
-        color:black;
+    #e1a {
+        width:292px;
+        height:229px;
+        float:left;
+        background:url(img/informaticsSkunkworks.PNG);
+        background-size:100% 100%;
+        border-radius:10px;
+        margin-top:30px;
+        margin-left:80px;
     }
 
-    .p2E {
-        font-size:12px;
-        font-weight:500;
-        padding-right:3%;
-        padding-left:3%;
-        padding-bottom:1%;
-        color:black;
-        font-weight:bold;
-    }
-}
-
-
-
-@media screen and (max-width:900px) {
-    .experiencesOrg {
-        width:100%;
-        max-width:100%;
-        min-width:100%;
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:space-around;
-        padding-right:10%;
-        padding-left:10%;
+    #e1b {
+        width:50%;
+        float:right;
+        margin-right:80px;
     }
 
-    .experience {
-        width:300px;
-        height:250px;
-        background:white;
-        margin-right:50px;
-        margin-left:50px;
-        margin-top:25px;
-        margin-bottom:25px;
-        text-align:center;
-        text-decoration:none;
+    #e2a {
+        width:292px;
+        height:229px;
+        float:right;
+        background:url(img/transcend.PNG);
+        background-size:100% 100%;
+        border-radius:10px;
+        margin-top:30px;
+        margin-right:80px;
+    }
+
+    #e2b {
+        width:50%;
+        float:left;
+        margin-left:80px;
+    }
+
+    #e3a {
+        width:292px;
+        height:229px;
+        float:left;
+        background:url(img/erieInsurance.PNG);
+        background-size:100% 100%;
+        border-radius:10px;
+        margin-top:30px;
+        margin-left:80px;
+    }
+
+    #e3b {
+        width:50%;
+        float:right;
+        margin-right:80px;
     }
 
     .p1E {
-        font-size:19.5px;
+        font-size:30px;
         font-weight:800;
         padding-top:1.5%;
-        padding-right:0.25%;
-        padding-left:0.25%;
-        color:black;
+        padding-right:3%;
+        padding-left:3%;
+        color:orange;
     }
 
     .p2E {
-        font-size:13px;
+        font-size:20px;
         font-weight:500;
+        padding-right:3%;
+        padding-left:3%;
         padding-bottom:1%;
-        padding-right:0.25%;
-        padding-left:0.25%;
-        color:black;
+        color:white;
         font-weight:bold;
     }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:1150px) {
+   .experiencesItem {
+        width:100%;
+        background:url(img/experience.png);
+        background-color: rgba(33, 33, 33, 0.5);
+        opacity:0.9;
+        background-size:100% 100%;
+        background-repeat:no-repeat;
+        max-width:100%;
+        min-width:100%;
+        padding-top:5%;
+        padding-bottom:5%;
+        overflow:hidden;
+    }
+
     .experiencesOrg {
         width:100%;
         max-width:100%;
@@ -871,82 +980,429 @@
         display:flex;
         flex-wrap:wrap;
         justify-content:space-around;
-        padding-right:10%;
-        padding-left:10%;
+        padding-right:1%;
+        padding-left:1%;
     }
 
     .experience {
-        width:214.29px;
-        height:178.57px;
-        background:white;
-        margin-right:20px;
-        margin-left:20px;
+        width:100%;
+        margin-right:15px;
+        margin-left:15px;
+        margin-top:15px;
+        margin-bottom:15px;
+        text-decoration:none;
+    }
+
+    #e1a {
+        width:250px;
+        height:196px;
+        float:left;
+        background:url(img/informaticsSkunkworks.PNG);
+        background-size:100% 100%;
+        border-radius:10px;
+        margin-top:30px;
+        margin-left:30px;
+    }
+
+    #e1b {
+        width:50%;
+        float:right;
+        margin-right:30px;
+    }
+
+    #e2a {
+        width:250px;
+        height:196px;
+        float:right;
+        background:url(img/transcend.PNG);
+        background-size:100% 100%;
+        border-radius:10px;
+        margin-top:30px;
+        margin-right:30px;
+    }
+
+    #e2b {
+        width:50%;
+        float:left;
+        margin-left:30px;
+    }
+
+    #e3a {
+        width:250px;
+        height:196px;
+        float:left;
+        background:url(img/erieInsurance.PNG);
+        background-size:100% 100%;
+        border-radius:10px;
+        margin-top:30px;
+        margin-left:30px;
+    }
+
+    #e3b {
+        width:50%;
+        float:right;
+        margin-right:30px;
+    }
+
+    .p1E {
+        font-size:25px;
+        font-weight:800;
+        padding-top:1.5%;
+        padding-right:3%;
+        padding-left:3%;
+        color:orange;
+    }
+
+    .p2E {
+        font-size:18px;
+        font-weight:500;
+        padding-right:3%;
+        padding-left:3%;
+        padding-bottom:1%;
+        color:white;
+        font-weight:bold;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .experiencesItem {
+        width:100%;
+        background:url(img/experience.png);
+        opacity:0.9;
+        background-size:100% 100%;
+        background-repeat:no-repeat;
+        max-width:100%;
+        min-width:100%;
+        padding-top:5%;
+        padding-bottom:5%;
+        overflow:hidden;
+    }
+
+    .experiencesOrg {
+        width:100%;
+        max-width:100%;
+        min-width:100%;
+        text-align:center;
+    }
+
+    .experience {
+        width:100%;
         margin-top:20px;
         margin-bottom:20px;
-        text-align:center;
-        text-decoration:none;
+      
+    }
+
+    #experience1 {
+        width:100%;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-around;
+        margin:0 auto;
+    }
+    
+    #e1a {
+        width:350px;
+        height:275px;
+        background:url(img/informaticsSkunkworks.PNG);
+        background-size:100% 100%;
+        border-radius:10px;
+        margin:0 auto;
+    }
+
+    #e1b {
+        width:100%;
+        padding-top:25px;
+        padding-bottom:50px;
+        margin:0 auto;
+    }
+    
+    #experience2 {
+        width:100%;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-around;
+        margin:0 auto;
+    }
+
+    #e2a {
+        width:350px;
+        height:275px;
+        background:url(img/transcend.PNG);
+        background-size:100% 100%;
+        border-radius:10px;
+        margin:0 auto;
+    }
+
+    #e2b {
+        width:100%;
+        padding-top:25px;
+        padding-bottom:50px;
+        margin:0 auto;
+    }
+    
+    #experience3 {
+        width:100%;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-around;
+        margin:0 auto;
+    }
+
+    #e3a {
+        width:350px;
+        height:275px;
+        background:url(img/erieInsurance.PNG);
+        background-size:100% 100%;
+        border-radius:10px;
+        margin:0 auto;
+    }
+
+    #e3b {
+        width:100%;
+        padding-top:25px;
+        margin:0 auto;
     }
 
     .p1E {
-        font-size:13.5px;
+        font-size:20px;
         font-weight:800;
         padding-top:1.5%;
-        padding-right:0.25%;
-        padding-left:0.25%;
-        color:black;
+        color:orange;
     }
 
     .p2E {
-        font-size:9.5px;
+        font-size:18px;
         font-weight:500;
         padding-bottom:1%;
-        padding-right:0.25%;
-        padding-left:0.25%;
-        color:black;
+        color:white;
         font-weight:bold;
-    }    
+    }
 }
 
-@media screen and (max-width:340px) {
+@media screen and (max-width:800px) {
+    .experiencesItem {
+        width:100%;
+        background:url(img/experience.png);
+        opacity:0.9;
+        background-size:100% 100%;
+        background-repeat:no-repeat;
+        max-width:100%;
+        min-width:100%;
+        padding-top:5%;
+        padding-bottom:5%;
+        overflow:hidden;
+    }
+
     .experiencesOrg {
         width:100%;
         max-width:100%;
         min-width:100%;
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:space-around;
-        padding-right:10%;
-        padding-left:10%;
+        text-align:center;
     }
 
     .experience {
-        width:200;
-        height:166.67px;
-        background:white;
-        margin-right:1px;
-        margin-left:1px;
-        margin-top:10px;
-        margin-bottom:10px;
-        text-align:center;
-        text-decoration:none;
+        width:100%;
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+
+    #experience1 {
+        width:100%;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-around;
+        margin:0 auto;
+    }
+    
+    #e1a {
+        width:350px;
+        height:275px;
+        background:url(img/informaticsSkunkworks.PNG);
+        background-size:100% 100%;
+        border-radius:10px;
+        margin:0 auto;
+    }
+
+    #e1b {
+        width:100%;
+        padding-top:25px;
+        padding-bottom:50px;
+        margin:0 auto;
+    }
+    
+    #experience2 {
+        width:100%;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-around;
+        margin:0 auto;
+    }
+
+    #e2a {
+        width:350px;
+        height:275px;
+        background:url(img/transcend.PNG);
+        background-size:100% 100%;
+        border-radius:10px;
+        margin:0 auto;
+    }
+
+    #e2b {
+        width:100%;
+        padding-top:25px;
+        padding-bottom:50px;
+        margin:0 auto;
+    }
+    
+    #experience3 {
+        width:100%;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-around;
+        margin:0 auto;
+    }
+
+    #e3a {
+        width:350px;
+        height:275px;
+        background:url(img/erieInsurance.PNG);
+        background-size:100% 100%;
+        border-radius:10px;
+        margin:0 auto;
+    }
+
+    #e3b {
+        width:100%;
+        padding-top:25px;
+        margin:0 auto;
     }
 
     .p1E {
-        font-size:10px;
+        font-size:25px;
         font-weight:800;
         padding-top:1.5%;
-        padding-right:0.25%;
-        padding-left:0.25%;
-        color:black;
+        color:orange;
     }
 
     .p2E {
-        font-size:9.5px;
+        font-size:20px;
         font-weight:500;
         padding-bottom:1%;
-        padding-right:0.25%;
-        padding-left:0.25%;
-        color:black;
+        color:white;
+        font-weight:bold;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .experiencesItem {
+        width:100%;
+        background:url(img/experience.png);
+        opacity:0.9;
+        background-size:100% 100%;
+        background-repeat:no-repeat;
+        max-width:100%;
+        min-width:100%;
+        padding-top:5%;
+        padding-bottom:5%;
+        overflow:hidden;
+    }
+
+    .experiencesOrg {
+        width:100%;
+        max-width:100%;
+        min-width:100%;
+        text-align:center;
+    }
+
+    .experience {
+        width:100%;
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+
+    #experience1 {
+        width:100%;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-around;
+        margin:0 auto;
+    }
+    
+    #e1a {
+        width:219px;
+        height:172px;
+        background:url(img/informaticsSkunkworks.PNG);
+        background-size:100% 100%;
+        border-radius:10px;
+        margin:0 auto;
+    }
+
+    #e1b {
+        width:100%;
+        padding-top:25px;
+        padding-bottom:50px;
+        margin:0 auto;
+    }
+    
+    #experience2 {
+        width:100%;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-around;
+        margin:0 auto;
+    }
+
+    #e2a {
+        width:219px;
+        height:172px;
+        background:url(img/transcend.PNG);
+        background-size:100% 100%;
+        border-radius:10px;
+        margin:0 auto;
+    }
+
+    #e2b {
+        width:100%;
+        padding-top:25px;
+        padding-bottom:50px;
+        margin:0 auto;
+    }
+    
+    #experience3 {
+        width:100%;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-around;
+        margin:0 auto;
+    }
+
+    #e3a {
+        width:219px;
+        height:172px;
+        background:url(img/erieInsurance.PNG);
+        background-size:100% 100%;
+        border-radius:10px;
+        margin:0 auto;
+    }
+
+    #e3b {
+        width:100%;
+        padding-top:25px;
+        margin:0 auto;
+    }
+
+    .p1E {
+        font-size:20px;
+        font-weight:800;
+        padding-top:1.5%;
+        color:orange;
+    }
+
+    .p2E {
+        font-size:18px;
+        font-weight:500;
+        padding-bottom:1%;
+        color:white;
         font-weight:bold;
     }
 }
